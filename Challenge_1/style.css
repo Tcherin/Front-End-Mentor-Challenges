@@ -1,0 +1,41 @@
+body {
+  background-color: hsl(220, 15%, 55%);
+  font-family: "outfit";
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 660px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.text {
+  font-size: 15px;
+  width: 88%;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 10px;
+  color: hsl(220, 15%, 55%);
+}
