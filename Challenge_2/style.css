@@ -1,0 +1,73 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+}
+
+p {
+  margin: 3px;
+}
+
+.result {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.result-1 {
+  font-size: 50px;
+  margin: 1px;
+}
+
+.result-2 {
+  margin: 1px;
+}
+
+.rating {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.comparison {
+  width: 80%;
+  font-size: 15px;
+}
+
+.summary-container {
+  width: 80%;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.summary-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
