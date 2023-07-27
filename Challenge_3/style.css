@@ -1,5 +1,6 @@
 :root {
   --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-primary-500: hsl(158, 36%, 20%);
   --clr-secondary-200: hsl(30, 38%, 92%);
   --clr-neutral-900: hsl(212, 21%, 14%);
   --clr-neutral-400: hsl(228, 12%, 48%);
@@ -78,7 +79,7 @@ body {
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
   font-size: 0.875rem;
-  color: var(--clr-neutral-400);
+  color: var(--clr-primary-400);
   background-color: var(--clr-secondary-200);
   display: grid;
   min-height: 100vh;
@@ -88,16 +89,25 @@ body {
 
 .flex-group {
   display: flex;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
 .product {
+  display: grid;
   --content-padding: 1.5rem;
   --content-spacing: 1rem;
   background-color: var(--clr-neutral-100);
   border-radius: 0.5rem;
   overflow: hidden;
+  max-width: 600px;
+}
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .product-content {
@@ -115,4 +125,30 @@ body {
   font-size: 2rem;
   font-family: var(--ff-accent);
   color: var(--clr-neutral-900);
+}
+
+.product-price {
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--clr-primary-400);
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--clr-secondary-200);
+  background-color: var(--clr-primary-400);
+  font-weight: var(--fw-bold);
+  padding: 1rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+button:is(:hover, :focus) {
+  background-color: var(--clr-primary-500);
 }

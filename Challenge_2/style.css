@@ -1,73 +1,223 @@
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
+:root {
+  --clr-primary-red: hsl(0, 100%, 67%);
+  --clr-primary-orange: hsl(39, 100%, 56%);
+  --clr-primary-green: hsl(166, 100%, 37%);
+  --clr-primary-blue: hsl(234, 85%, 45%);
+
+  --background-gradient-start: hsl(252, 100%, 67%);
+  --background-gradient-end: hsl(241, 81%, 54%);
+
+  --circle-gradient-start: hsla(241, 72%, 46%, 0);
+  --circle-gradient-end: hsla(256, 72%, 46%, 1);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-light-blue: hsl(221, 100%, 96%);
+  --clr-neutral-lavender: hsl(241, 100%, 89%);
+  --button-neutral: hsl(224, 30%, 27%);
+
+  --ff-base: "Hanken Grotesk", sans-serif;
+
+  --ff-regular: 500;
+  --ff-bold: 700;
+  --ff-extra-bold: 800;
 }
 
-.card-1 {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  border: 1px solid black;
-  width: 250px;
+  min-height: 100vh;
+  font-family: var(--ff-base);
 }
+
+.card {
+  display: flex;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 20px;
+  max-width: 33rem;
+}
+
+/* card 1 */
+
+.card-1 {
+  background-image: linear-gradient(
+    var(--background-gradient-start),
+    var(--background-gradient-end)
+  );
+  border-radius: 20px;
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 50%;
+}
+
+.card-1-title {
+  color: var(--clr-neutral-lavender);
+  font-size: 1.1rem;
+}
+
+.main-score {
+  font-size: 3.2rem;
+  color: var(--clr-neutral-white);
+  line-height: 3.7rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-neutral-lavender);
+  font-size: 0.85rem;
+  opacity: 50%;
+}
+
+.score-container {
+  background-image: linear-gradient(
+    var(--circle-gradient-end),
+    var(--circle-gradient-start)
+  );
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rating {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-white);
+}
+
+.content {
+  font-size: 0.85rem;
+  color: var(--clr-neutral-lavender);
+}
+
+/* card 2 */
 
 .card-2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid black;
-  width: 250px;
+  gap: 1.7rem;
+  background-color: var(--clr-neutral-white);
+  padding: 2em;
+  border-radius: 20px;
+  width: 50%;
 }
 
-p {
-  margin: 3px;
+.card-2-title {
+  font-size: 1.1rem;
+  color: var(--button-neutral);
 }
 
-.result {
-  border: 1px solid black;
-  border-radius: 50%;
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.result-1 {
-  font-size: 50px;
-  margin: 1px;
-}
-
-.result-2 {
-  margin: 1px;
-}
-
-.rating {
-  font-size: 25px;
-  margin: 5px;
-}
-
-.comparison {
-  width: 80%;
-  font-size: 15px;
-}
-
-.summary-container {
-  width: 80%;
-}
-
-.summary-item {
+.list-item {
   display: flex;
   justify-content: space-between;
-  margin: 5px;
-  padding: 5px;
+  align-items: center;
   border-radius: 10px;
-  border: 1px solid blue;
+  padding: 0.6rem;
+  font-size: 0.85rem;
 }
 
-.summary-icon {
+.list-item-title {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5em;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 10%);
+}
+
+.reaction-title {
+  color: var(--clr-primary-red);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 10%);
+}
+
+.memory-title {
+  color: var(--clr-primary-orange);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 10%);
+}
+
+.verbal-title {
+  color: var(--clr-primary-green);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 10%);
+}
+
+.visual-title {
+  color: var(--clr-primary-blue);
+}
+
+span {
+  opacity: 50%;
+}
+
+button {
+  color: var(--clr-neutral-white);
+  background-color: var(--button-neutral);
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem;
+  font-size: 0.85rem;
 }

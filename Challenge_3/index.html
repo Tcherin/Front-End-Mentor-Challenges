@@ -25,6 +25,10 @@
     <main>
       <article class="product">
         <picture class="product-image">
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 600px)"
+          />
           <img src="./images/image-product-mobile.jpg" />
         </picture>
         <div class="product-content">
@@ -39,10 +43,14 @@
 
           <div class="flex-group">
             <p class="product-price">$149.99</p>
-            <p class="product-original-price">$169.99</p>
+            <p class="product-original-price"><s>$169.99</s></p>
           </div>
-
-          <button>Add to Cart</button>
+          <button>
+            <div class="button">
+              <img src="./images/icon-cart.svg" alt="" />
+              <p>Add to Cart</p>
+            </div>
+          </button>
         </div>
       </article>
     </main>
