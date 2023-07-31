@@ -1,0 +1,189 @@
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey-300: hsl(217, 12%, 63%);
+  --neutral-grey-500: hsl(216, 12%, 54%);
+  --neutral-blue-700: hsl(213, 19%, 18%);
+  --neutral-blue-900: hsl(216, 12%, 8%);
+
+  --ff-primary: "Overpass", sans-serif;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+body {
+  background-color: black;
+  font-family: var(--ff-primary);
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  background-image: linear-gradient(
+    var(--neutral-blue-700),
+    var(--neutral-blue-900)
+  );
+  padding: 1.8rem;
+  border-radius: 1rem;
+  gap: 1.3rem;
+}
+
+.card-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--neutral-blue-700);
+  border-radius: 3rem;
+  padding: 0.6rem;
+}
+
+.card-title {
+  color: var(--neutral-white);
+  font-size: 1.25rem;
+}
+
+.card-content {
+  color: var(--neutral-grey-300);
+  font-size: 0.7rem;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--neutral-grey-300);
+  background-color: var(--neutral-blue-700);
+  border-radius: 2rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: 0.75rem;
+}
+
+.submit {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--neutral-white);
+  background-color: var(--primary-orange);
+  padding: 0.45rem;
+  border-radius: 1.1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+}
+
+.rating-option:hover {
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+}
+
+.rating-option:focus {
+  background-color: var(--neutral-grey-500);
+  color: var(--neutral-white);
+}
+
+button:hover {
+  background-color: var(--neutral-white);
+  color: var(--primary-orange);
+}
+
+.result-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  gap: 1.2rem;
+}
+
+.result {
+  background-color: var(--neutral-blue-700);
+  color: var(--primary-orange);
+  border-radius: 2rem;
+  font-size: 0.7rem;
+}
