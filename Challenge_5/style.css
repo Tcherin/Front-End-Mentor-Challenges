@@ -1,0 +1,147 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px hsl(225, 100%, 90%);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.75rem;
+}
+
+a {
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.plan-description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.annual-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.music-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.payment {
+  background: hsl(245, 75%, 52%);
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 900;
+  font-size: 0.7rem;
+  padding: 0.6rem 0;
+  box-shadow: 0px 15px 10px hsl(225, 100%, 90%);
+}
+
+.cancel {
+  font-size: 0.65rem;
+  font-weight: 900;
+}
