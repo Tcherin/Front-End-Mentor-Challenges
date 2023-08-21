@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-overlay {
+  max-width: 100%;
+  width: 50%;
+  background: hsl(277, 64%, 61%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 82%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(233, 47%, 7%);
+}
+
+.card {
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  color: white;
+  max-width: 55rem;
+  height: 22rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 3.25rem;
+  gap: 1.1rem;
+}
+
+.card-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.65rem;
+  letter-spacing: 0.045rem;
+  width: 90%;
+}
+
+.card-details {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.65rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+  width: 80%;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.stat-container {
+  display: flex;
+  line-height: 1.3rem;
+  width: 75%;
+  gap: 3.25rem;
+  margin-top: 2.5rem;
+}
+
+.stat-number {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.companies,
+.templates,
+.queries {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  letter-spacing: 1px;
+}
