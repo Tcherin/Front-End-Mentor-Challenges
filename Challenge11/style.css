@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "Karla", "sans-serif";
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 28rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  justify-content: center;
+  background-color: white;
+  gap: 0.7rem;
+}
+
+.title-title {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.2rem;
+}
+
+.title-subtitle {
+  color: hsl(71, 73%, 54%);
+  font-size: 0.9rem;
+}
+
+.title-text {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+
+.info-container {
+  display: flex;
+  color: white;
+}
+
+.info-subtitle {
+  font-size: 0.9rem;
+}
+
+.subscription-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 1.75rem;
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  width: 50%;
+  background-color: hsl(179, 64%, 45%);
+  gap: 0.9rem;
+}
+
+.about-text {
+  font-size: 0.6rem;
+  line-height: 1rem;
+  list-style: none;
+}
+
+button {
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 3px;
+  padding: 0.9em;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 0.7rem;
+}
+
+.pricing-content {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.575rem;
+  margin-right: 7px;
+}
+
+.frequency {
+  color: #ffffffdc;
+  font-size: 0.7rem;
+}
+
+.subscription-text {
+  font-size: 0.7rem;
+}
+
+.subscription-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .info-container {
+    flex-direction: column;
+  }
+  .flex-container {
+    width: 16rem;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+  .subscription-content {
+    width: 100%;
+  }
+}

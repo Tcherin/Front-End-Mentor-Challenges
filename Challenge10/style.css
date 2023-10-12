@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("./images/bg-pattern-top.svg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 3%;
+  overflow: hidden;
+  gap: 3rem;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 42rem;
+}
+
+.content {
+  gap: 1.5rem;
+  padding: 1.9rem;
+}
+
+.card-background {
+  z-index: 0;
+}
+
+.user-info {
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.card-image {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 23.5%;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  text-align: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.stat-number {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.stat-title {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  gap: 0.5rem;
+}
+
+hr {
+  border: 0.1px solid lightgray;
+  width: 18rem;
+}
