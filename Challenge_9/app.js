@@ -1,9 +1,13 @@
 const btns = document.querySelectorAll(".arrow");
 
 btns.forEach((btn) => {
+  const button = btn.querySelector();
+  const questionText = question.querySelector();
   btn.addEventListener("click", (e) => {
-    const answer = e.currentTarget.parentElement.parentElement.parentElement;
-    console.log(answer);
+    btn.forEach((item) => {
+      if (item !== question) {
+      }
+    });
   });
 });
 
