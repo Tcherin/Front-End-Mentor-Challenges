@@ -100,3 +100,22 @@ main {
   font-size: 2rem;
   font-weight: 600;
 }
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.column {
+  flex: 1;
+}
+
+@media screen and (min-width: 1218px) {
+  .card-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 74.5rem;
+  }
+}
